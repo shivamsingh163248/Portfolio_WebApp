@@ -1,0 +1,45 @@
+/* Links List Styles */
+.links-list {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.links-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.link-item:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.link-icon {
+  font-size: 1.25rem;
+}
+
+.link-platform {
+  font-weight: 500;
+}
+
+.link-display-name {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}

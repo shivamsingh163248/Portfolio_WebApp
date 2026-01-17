@@ -1,0 +1,360 @@
+{
+  "info": {
+    "_postman_id": "portfolio-api-collection",
+    "name": "Portfolio API",
+    "description": "Portfolio API - A RESTful API for managing portfolio information",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "item": [
+        {
+          "name": "Get All Profiles",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/profile/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "profile", ""]
+            }
+          }
+        },
+        {
+          "name": "Get Profile by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/profile/1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "profile", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Profile",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"phone\": \"+1-123-456-7890\",\n  \"location\": \"New York, USA\",\n  \"summary\": \"Software Developer\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/profile/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "profile", ""]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skills",
+      "item": [
+        {
+          "name": "Get All Skills",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/skills/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "skills", ""]
+            }
+          }
+        },
+        {
+          "name": "Get Top Skills",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/skills/top?limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["api", "skills", "top"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Skills by Category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/skills/by-category?profile_id=1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "skills", "by-category"],
+              "query": [
+                {
+                  "key": "profile_id",
+                  "value": "1"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Skill Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/skills/categories",
+              "host": ["{{base_url}}"],
+              "path": ["api", "skills", "categories"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "Get All Projects",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/projects/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "projects", ""]
+            }
+          }
+        },
+        {
+          "name": "Get Projects by Skill",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/projects/?skill=python",
+              "host": ["{{base_url}}"],
+              "path": ["api", "projects", ""],
+              "query": [
+                {
+                  "key": "skill",
+                  "value": "python"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Featured Projects",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/projects/?featured=true",
+              "host": ["{{base_url}}"],
+              "path": ["api", "projects", ""],
+              "query": [
+                {
+                  "key": "featured",
+                  "value": "true"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Project by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/projects/1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "projects", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Education",
+      "item": [
+        {
+          "name": "Get All Education",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/education/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "education", ""]
+            }
+          }
+        },
+        {
+          "name": "Get Education by Profile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/education/?profile_id=1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "education", ""],
+              "query": [
+                {
+                  "key": "profile_id",
+                  "value": "1"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Work Experience",
+      "item": [
+        {
+          "name": "Get All Work Experience",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/work-experience/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "work-experience", ""]
+            }
+          }
+        },
+        {
+          "name": "Get Work Experience by Profile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/work-experience/?profile_id=1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "work-experience", ""],
+              "query": [
+                {
+                  "key": "profile_id",
+                  "value": "1"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Certifications",
+      "item": [
+        {
+          "name": "Get All Certifications",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/certifications/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "certifications", ""]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Links",
+      "item": [
+        {
+          "name": "Get All Links",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/links/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "links", ""]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "item": [
+        {
+          "name": "Global Search",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/search/?q=python",
+              "host": ["{{base_url}}"],
+              "path": ["api", "search", ""],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "python"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Search Projects by Skill",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/search/projects-by-skill?skill=React",
+              "host": ["{{base_url}}"],
+              "path": ["api", "search", "projects-by-skill"],
+              "query": [
+                {
+                  "key": "skill",
+                  "value": "React"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    }
+  ]
+}

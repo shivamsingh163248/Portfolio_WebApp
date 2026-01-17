@@ -1,0 +1,54 @@
+/* Education List Styles */
+.education-list {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.education-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.education-item {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.education-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.institution-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.education-years {
+  font-size: 0.875rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.education-degree {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.education-location {
+  font-size: 0.875rem;
+  color: #64748b;
+}

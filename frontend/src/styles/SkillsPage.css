@@ -1,0 +1,48 @@
+/* Skills Page Styles */
+.skills-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.top-skills-section {
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.top-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.top-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 25px;
+}
+
+.top-skill-name {
+  font-weight: 500;
+}
+
+.top-skill-count {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  padding: 0.15rem 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.all-skills-section {
+  margin-top: 2rem;
+}

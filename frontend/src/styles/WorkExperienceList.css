@@ -1,0 +1,74 @@
+/* Work Experience List Styles */
+.work-experience-list {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.work-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.work-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.work-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.work-duration {
+  font-size: 0.875rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.company-name {
+  color: #475569;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.work-location {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.work-description {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.work-achievements {
+  margin-left: 1.25rem;
+  list-style: disc;
+}
+
+.work-achievements li {
+  color: #475569;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
