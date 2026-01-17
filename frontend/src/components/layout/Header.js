@@ -33,6 +33,9 @@ const Header = () => {
           <Link to="/search" className={isActive('/search')}>
             Search
           </Link>
+          <Link to="/admin" className={isActive('/admin')}>
+            ⚙️ Admin
+          </Link>
         </nav>
       </div>
     </header>
