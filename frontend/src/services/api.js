@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// API Base URL - empty string means use relative URLs (through nginx proxy)
-// This works for production where nginx proxies /api to backend
-const API_BASE_URL = process.env.REACT_APP_API_URL || '';
+// API Base URL - use EC2 IP for production
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://13.49.44.168:8000';
 
 // Create axios instance with default config
 const api = axios.create({
