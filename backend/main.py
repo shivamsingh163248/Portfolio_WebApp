@@ -31,6 +31,8 @@ origins = [
     "http://localhost:5173",
     "http://frontend:3000",
     "http://127.0.0.1:3000",
+    "http://13.49.44.168:3000",
+    "http://13.49.44.168",
     "*"  # Allow all origins for development
 ]
 
