@@ -21,7 +21,7 @@ to me
 
 > 
 
-> I'm excited to introduce the **ACAS DevOps Portal** - a centralized monitoring and management platform designed to help our team with high-level CI/CD monitoring, build insights, documentation management, and consolidating all our important links in one place."
+> I'm   introduce the **ACAS DevOps Portal** - a centralized monitoring and management platform designed to help our team with high-level CI/CD monitoring, build insights, documentation management, and consolidating all our important links in one place."
 
  
 
